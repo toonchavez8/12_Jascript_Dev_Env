@@ -6,6 +6,9 @@ This is a development environment for Jascript. It is a work in progress as taug
 
 1. [Getting Started](#getting-started)
 2. [Whats Included](#whats-included)
+3. [NPM Scripts](#npm-scripts)
+4. [Transpiling](#transpiling)
+5. [Bundler](#bundle)
 
 ## Getting Started
 
@@ -40,7 +43,7 @@ Why you need a starter kit!
 - [Express](http://expressjs.com/) for a development web server
 - [Open](https://www.npmjs.com/package/open) to open the web browser
 - [npm-run-all](https://www.npmjs.com/package/npm-run-all) to run multiple npm scripts in parallel or sequential
-- [chalk](https://www.npmjs.com/package/chalk) for console logging
+- [chalk](https://www.npmjs.com/package/chalk) for console logging with colores
 - [compression](https://www.npmjs.com/package/compression) for gzip compression
 - [cross-env](https://www.npmjs.com/package/cross-env) for setting environment variables across platforms
 - [jsdom](https://www.npmjs.com/package/jsdom) for testing in a headless browser
@@ -51,3 +54,21 @@ run `npm audit` to check for vulnerabilities in the packages and run `npm audit 
 
 - `lt --port` - Port to forward to
 - `--subdomain` - Subdomain to use and incluid with your temp domain
+
+## NPM Scripts
+
+- `start` - Runs the app in development mode
+- `localtunnel` - Runs  local tunnel on port 3000
+- `share` - runs all scripts at the same time
+
+## Transpiling
+
+Babel is a JavaScript compiler. It takes Jascript code, transforms it and returns vanilla Jascript in return. It is used to convert Jascript to ES6.
+
+Babel is configured in the `.babelrc` file.
+
+## Bundle
+
+Webpack is a module bundler. It takes modules with dependencies and generates static assets representing those modules.
+
+Webpack is configured in the `webpack.config.js` file.
