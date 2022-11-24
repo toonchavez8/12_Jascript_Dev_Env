@@ -108,3 +108,9 @@ Chai is configured in the `testSetup.js` file.
 | Where to run tests | Where to place tests | When to run |
 |--------------------|----------------------|-------------|
 | Node               | Alongside            | Upon Save   |
+
+## Continuous Integration
+
+Travis CI is a hosted, distributed continuous integration service used to build and test software projects hosted at GitHub.
+
+[Travis](https://www.travis-ci.com/)
