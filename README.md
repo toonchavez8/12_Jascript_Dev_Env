@@ -9,6 +9,7 @@ This is a development environment for Jascript. It is a work in progress as taug
 3. [NPM Scripts](#npm-scripts)
 4. [Transpiling](#transpiling)
 5. [Bundler](#bundle)
+6. [Linting](#linting)
 
 ## Getting Started
 
@@ -72,3 +73,35 @@ Babel is configured in the `.babelrc` file.
 Webpack is a module bundler. It takes modules with dependencies and generates static assets representing those modules.
 
 Webpack is configured in the `webpack.config.js` file.
+
+### Source maps
+
+Weback comes with source maps by addind `debugger` to our code it will add line breaks that will  provide us with
+the original code. This is useful for debugging.
+
+![Debugger in action](./imgs/debugger.png)
+
+## Linting
+
+ESLint is a tool for identifying and reporting on patterns found in Jascript code.
+Currently ESlint is set up
+
+- [ESLint Recomended](https://eslint.org/docs/latest/rules/)
+- [eslint-watch](https://www.npmjs.com/package/eslint-watch)
+
+ESLint is configured in the `.eslintrc.json` file.
+
+## Testing
+
+Mocha is a JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
+
+Mocha is configured in the `mocha.opts` file.
+
+Chai is a BDD / TDD assertion library for Jascript that can be paired with any Jascript testing framework.
+
+Chai is configured in the `testSetup.js` file.
+
+| framework | assertion library | helpers |
+| [Mocha](https://mochajs.org/) | [Chai](https://www.chaijs.com/) | [Jsdom](https://www.npmjs.com/package/jsdom) |
+| Where to run tests | Where to place tests | When to run |
+| Node               | Alongside            | Upon Save   |
