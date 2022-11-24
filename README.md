@@ -114,3 +114,6 @@ Chai is configured in the `testSetup.js` file.
 Travis CI is a hosted, distributed continuous integration service used to build and test software projects hosted at GitHub.
 
 [Travis](https://www.travis-ci.com/)
+[Travis Docs](https://docs.travis-ci.com/)
+[AppVeyor](https://www.appveyor.com/)
+[AppVeyor Docs](https://www.appveyor.com/docs/)
