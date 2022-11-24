@@ -102,6 +102,9 @@ Chai is a BDD / TDD assertion library for Jascript that can be paired with any J
 Chai is configured in the `testSetup.js` file.
 
 | framework | assertion library | helpers |
+|-----------|-------------------|---------|
 | [Mocha](https://mochajs.org/) | [Chai](https://www.chaijs.com/) | [Jsdom](https://www.npmjs.com/package/jsdom) |
+
 | Where to run tests | Where to place tests | When to run |
+|--------------------|----------------------|-------------|
 | Node               | Alongside            | Upon Save   |
