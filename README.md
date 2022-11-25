@@ -10,6 +10,8 @@ This is a development environment for Jascript. It is a work in progress as taug
 4. [Transpiling](#transpiling)
 5. [Bundler](#bundle)
 6. [Linting](#linting)
+7. [Testing](#testing)
+8. [Continuous Integration](#continuous-integration)
 
 ## Getting Started
 
@@ -117,3 +119,55 @@ Travis CI is a hosted, distributed continuous integration service used to build 
 [Travis Docs](https://docs.travis-ci.com/)
 [AppVeyor](https://www.appveyor.com/)
 [AppVeyor Docs](https://www.appveyor.com/docs/)
+
+## Express and Http
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
+Express is configured in the `index.js` file.
+
+### Centralizing API Calls
+
+We can centralize our API calls in a single file and export them to be used in our application.
+
+ API calls are configured in the `./src/APi` folder.
+
+### Centralizing Routes
+
+We can centralize our routes in a single file and export them to be used in our application.
+
+ Routes are configured in the `./src/routes` folder.
+
+### Mock DATA
+
+We create mock data using `JSON Schema` Mock libriaris such as `faker.js` `chance.js` `randexp.js` and loading everything on a `JSON server` as an api
+
+#### JSON Schema
+
+JSON Schema is a vocabulary that allows you to annotate and validate JSON documents. It is defined by [IETF](https://tools.ietf.org/html/draft-zyp-json-schema-03) and is available as a [JSON](http://json-schema.org/) document.
+
+JSON Schema is configured in the `./src/api/db.json` file.
+
+#### Faker.js
+
+Faker.js is a library that generates massive amounts of fake data in the browser and node.js. It can generate names, addresses, phone numbers, and much more.
+
+Faker.js is configured in the `./src/api/db.json` file.
+
+#### Chance.js
+
+Chance is a minimalist generator of random strings, numbers, etc. It is designed to be easy to use and quick to implement.
+
+Chance.js is configured in the `./src/api/db.json` file.
+
+#### Randexp.js
+
+Randexp.js is a library that generates random strings based on a regular expression. It can be used to generate random strings that match a specific pattern.
+
+Randexp.js is configured in the `./src/api/db.json` file.
+
+#### JSON Server
+
+JSON Server is a Node module that lets you turn your static JSON files into a REST API server. It is used for prototyping and mocking.
+
+JSON Server is configured in the `./src/api/db.json` file.
