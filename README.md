@@ -154,18 +154,6 @@ Faker.js is a library that generates massive amounts of fake data in the browser
 
 Faker.js is configured in the `./src/api/db.json` file.
 
-#### Chance.js
-
-Chance is a minimalist generator of random strings, numbers, etc. It is designed to be easy to use and quick to implement.
-
-Chance.js is configured in the `./src/api/db.json` file.
-
-#### Randexp.js
-
-Randexp.js is a library that generates random strings based on a regular expression. It can be used to generate random strings that match a specific pattern.
-
-Randexp.js is configured in the `./src/api/db.json` file.
-
 #### JSON Server
 
 JSON Server is a Node module that lets you turn your static JSON files into a REST API server. It is used for prototyping and mocking.
